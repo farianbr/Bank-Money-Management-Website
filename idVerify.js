@@ -40,6 +40,19 @@ lockButton.addEventListener('click', function(e){
     
 
     const loginButton = document.querySelector('.login-button')
+    loginButton.addEventListener('click', function(e){
+        e.preventDefault()
+    
+        if(passValue.value === 'asifbokachele'){
+            lockImage.style.visibility = 'hidden'
+            loginSection.innerHTML = ''
+            lockButton.style.display = 'block'
+        }
+        else{
+            alert("Wrong Password!")
+        }
+    })
+    
 
     lockButton.style.display = 'none'
 })
