@@ -22,3 +22,40 @@
     justify-content: center;
     gap: 50px;
 }
+
+.login-fields{
+    text-align: center;
+}
+
+.login-title{
+    text-align: center;
+}
+
+.email-field{
+    margin-bottom: 10px;
+    
+}
+
+.pass-field{
+    margin-bottom: 10px;
+}
+
+.name-box{
+    width: 400px;
+}
+.email-box{
+    width: 400px;
+}
+
+.lock-image{
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    /* visibility: hidden; */
+}
+
+.lock-button-container{
+    text-align: center;
+    display: none;
+    margin-top: 50px;
+}

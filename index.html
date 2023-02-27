@@ -10,25 +10,52 @@
 <body>
     <h1 class="heading">Personal Bank</h1>
 
-    <div class="balance-container">
-        <h3 class="balance-title">Balance</h3>
-        <h3 class="balance-value">500</h3> 
-    </div>
+    <img src="lock-image.png" alt="" class="lock-image">
 
-    <div class="body-container">
-        <div class="withdraw-container">
-            <label for="withdraw">Enter Withdraw Amount</label>
-            <input type="text" id="withdraw">
-            <button class="withdraw-button">Submit</button>
+    <section class="lock-section">
+        <div class="balance-container">
+            <h3 class="balance-title">Balance</h3>
+            <h3 class="balance-value">500</h3> 
+        </div>
+    
+        <div class="body-container">
+            <div class="withdraw-container">
+                <label for="withdraw">Enter Withdraw Amount</label>
+                <input type="text" id="withdraw">
+                <button class="withdraw-button">Submit</button>
+            </div>
+    
+            <div class="deposit-container">
+                <label for="deposit">Enter Deposit Amount</label>
+                <input type="text" id="deposit">
+                <button class="deposit-button">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="login-container"><br><br>
+        <h1 class="login-title">Please Login!</h1>
+
+        <div class="login-fields">
+            <div class="email-field">
+                <label for="Email">Enter Your Email:</label><br>
+                <input type="text" id="Email" class="name-box">
+            </div><br>
+            <div class="pass-field">
+                <label for="Pass">Enter Your Password:</label><br>
+                <input type="text" id="Pass" class="email-box">
+            </div>
+            <button class="login-button">Log In</button>
+
         </div>
 
-        <div class="deposit-container">
-            <label for="deposit">Enter Deposit Amount</label>
-            <input type="text" id="deposit">
-            <button class="deposit-button">Submit</button>
-        </div>
+    </section>
+
+    <div class="lock-button-container">
+        <button class="lock-button">Lock Your Bank</button>
     </div>
 
     <script src="moneyManage.js"></script>
+    <script src="idVerify.js"></script>
 </body>
 </html>

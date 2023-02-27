@@ -8,7 +8,7 @@ let bankBalance = balanceValue.innerText
 withdrawButton.addEventListener('click', function(e){
     e.preventDefault()
 
-    if(Number(bankBalance)>Number(withdrawValue.value)){
+    if(Number(bankBalance)>=Number(withdrawValue.value)){
         balanceValue.innerText = Number(bankBalance) - Number(withdrawValue.value)
     bankBalance = balanceValue.innerText
     withdrawValue.value = ""
