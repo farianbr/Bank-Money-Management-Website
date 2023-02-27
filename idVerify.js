@@ -40,6 +40,8 @@ lockButton.addEventListener('click', function(e){
     
 
     const loginButton = document.querySelector('.login-button')
+    const passValue = document.querySelector('.email-box')
+    
     loginButton.addEventListener('click', function(e){
         e.preventDefault()
     
