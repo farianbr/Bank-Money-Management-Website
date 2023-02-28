@@ -51,6 +51,7 @@
     position: absolute;
     width: 100%;
     height: 220px;
+    overflow: hidden;
     /* visibility: hidden; */
 }
 
@@ -58,4 +59,9 @@
     text-align: center;
     display: none;
     margin-top: 50px;
+    
+}
+
+.login-container-hide{
+    display: none;
 }
