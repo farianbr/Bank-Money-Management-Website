@@ -8,6 +8,12 @@ let bankBalance = balanceValue.innerText
 withdrawButton.addEventListener('click', function(e){
     e.preventDefault()
 
+    if(isNaN(withdrawValue.value)){
+        alert('Please enter a number!')
+        withdrawValue.value = ''
+        return
+    }
+
     if(Number(bankBalance)>=Number(withdrawValue.value)){
         balanceValue.innerText = Number(bankBalance) - Number(withdrawValue.value)
     bankBalance = balanceValue.innerText
@@ -19,6 +25,12 @@ withdrawButton.addEventListener('click', function(e){
 })
 depositButton.addEventListener('click', function(e){
     e.preventDefault()
+
+    if(isNaN(depositValue.value)){
+        alert('Please enter a number!')
+        depositValue.value = ''
+        return
+    }
 
     balanceValue.innerText = Number(depositValue.value) + Number(bankBalance)
     bankBalance = balanceValue.innerText
